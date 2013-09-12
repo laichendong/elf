@@ -6,8 +6,7 @@
 ##示例调用##
 1. 引入脚本
 
-    `<script src="../lib/jquery.min.js"></script>`
-    `<script src="../lib/jquery.metadata.js"></script>`
+    `<script src="jquery.elf.pagination.js" type="text/javascript" charset="UTF-8"></script>`
 
 2. html
 
