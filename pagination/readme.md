@@ -2,12 +2,18 @@
 
 ##示例调用##
 1. 引入脚本
-    <pre><code><script src="../lib/jquery.min.js"></script>
-     <script src="../lib/jquery.metadata.js"></script></code></pre>
+
+    `<script src="../lib/jquery.min.js"></script>`
+    `<script src="../lib/jquery.metadata.js"></script>`
+
 2. html
-    <pre><code><div class="elfPagination { totalPage: 10}"></div></code></pre>
+
+    `<div class="elfPagination { totalPage: 10}"></div>`
+
 3. 脚本
-    <pre><code>$(".elfPagination").elfPagination();</code></pre>
+
+    `$(".elfPagination").elfPagination();`
+
 
 ##选项##
 <table>
