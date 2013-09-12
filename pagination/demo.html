@@ -22,13 +22,10 @@
         index: 1, // 当前页
         numEdge: 1, // 两头分别显示的页码数（前N页和倒数N页）
         numSiblings: 3, // 当前页两边分别显示的页码数
-        functions: { // 可选功能配置
-            prevAndNext: true // 上一页和下一页功能
-            , goTo: true  // 跳转到某一页
-            , totalPage: true // 是否显示总页数
-        },
-        paged: function (page) { // 切换到某一页后的回调
-        }
+        prevAndNext: true , // 上一页和下一页功能
+        goTo: true, // 跳转到某一页
+        totalPage: true, // 是否显示总页数
+        paged: function (page) { } // 切换到某一页后的回调
     }
     </pre>
 </div>
