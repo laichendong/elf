@@ -1,5 +1,8 @@
 #elf pagination#
 
+##演示##
+[demo](http://laichendong.github.io/elf/demo/pagination/demo.html)
+
 ##示例调用##
 1. 引入脚本
 
