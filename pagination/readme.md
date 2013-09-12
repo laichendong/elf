@@ -1,5 +1,14 @@
 #elf pagination#
 
+##示例调用##
+1. 引入脚本
+    `<script src="../lib/jquery.min.js"></script>
+     <script src="../lib/jquery.metadata.js"></script>`
+2. html
+    `<div class="elfPagination { totalPage: 10}"></div>`
+3. 脚本
+    `$(".elfPagination").elfPagination();`
+
 ##选项##
 <table>
 <tr><td>名称</td><td>类型</td><td>默认值</td><td>描述</td></tr>
