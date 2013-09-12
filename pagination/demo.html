@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script src="../lib/jquery.min.js"></script>
+    <script src="../lib/jquery.metadata.js"></script>
+    <script src="jquery.elf.pagination.js" type="text/javascript" charset="UTF-8"></script>
+    <link href="jqurey.elf.pagination.css" rel="stylesheet"/>
+    <style>
+        .opt {
+            margin: 50px 0 0;
+        }
+    </style>
+</head>
+<body>
+<div class="opt">
+    <h2>完整配置：</h2>
+    <pre>
+    {
+        totalPage: 20, // 必选参数， 总页数
+        index: 1, // 当前页
+        numEdge: 1, // 两头分别显示的页码数（前N页和倒数N页）
+        numSiblings: 3, // 当前页两边分别显示的页码数
+        functions: { // 可选功能配置
+            prevAndNext: true // 上一页和下一页功能
+            , goTo: true  // 跳转到某一页
+            , totalPage: true // 是否显示总页数
+        },
+        paged: function (page) { // 切换到某一页后的回调
+        }
+    }
+    </pre>
+</div>
+
+
+<div class="opt">
+    <pre>{ totalPage: 10}</pre>
+</div>
+<div class="elfPagination { totalPage: 10}"></div>
+
+<div class="opt">
+    <pre>{ totalPage: 20, index : 10}</pre>
+</div>
+<div class="elfPagination { totalPage: 20, index : 10}"></div>
+
+<div class="opt">
+    <pre>{ totalPage: 20, index : 10, numEdge: 3, numSiblings: 3}</pre>
+</div>
+<div class="elfPagination { totalPage: 20, index : 10, numEdge: 3, numSiblings: 3}"></div>
+
+<div class="opt">
+    <pre>{ totalPage: 20, functions: { prevAndNext: true, goTo : false, totalPage : true } }</pre>
+</div>
+<div class="elfPagination { totalPage: 20, functions: { prevAndNext: true, goTo : false, totalPage : true } }"></div>
+
+<div class="opt">
+    <pre>{ totalPage: 5, functions: { prevAndNext: true, goTo : false, totalPage : false} }</pre>
+</div>
+<div class="elfPagination { totalPage: 5, functions: { prevAndNext: true, goTo : false, totalPage : false} }"></div>
+
+
+<script type="text/javascript">
+    $(".elfPagination").elfPagination();
+</script>
+
+</body>
+</html>
