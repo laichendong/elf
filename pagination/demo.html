@@ -17,15 +17,17 @@
 <div class="opt">
     <h2>完整配置：</h2>
     <pre>
-    {
-        totalPage: 20, // 必选参数， 总页数
-        index: 1, // 当前页
-        numEdge: 1, // 两头分别显示的页码数（前N页和倒数N页）
-        numSiblings: 3, // 当前页两边分别显示的页码数
-        prevAndNext: true , // 上一页和下一页功能
-        goTo: true, // 跳转到某一页
-        totalPage: true, // 是否显示总页数
-        paged: function (page) { } // 切换到某一页后的回调
+    $.fn.elfPagination.defaults = {
+        totalPage: 20 // 必选参数， 总页数
+        , index: 1 // 当前页
+        , numEdge: 1 // 两头分别显示的页码数（前N页和倒数N页）
+        , numSiblings: 3 // 当前页两边分别显示的页码数
+        , showPrevAndNext: true // 上一页和下一页功能
+        , showGoTo: true  // 跳转到某一页
+        , showTotalPage: true // 是否显示总页数
+        , shortcutSupport: true // 快捷键支持, 当页面中有多个实例时.请将该选项赋值为false
+        , paged: function (page) { // 切换到某一页后的回调
+        }
     }
     </pre>
 </div>
@@ -34,31 +36,31 @@
 <div class="opt">
     <pre>{ totalPage: 10}</pre>
 </div>
-<div class="elfPagination { totalPage: 10}"></div>
+<div id="aa" class="elfPagination { totalPage: 10}"></div>
 
-<div class="opt">
-    <pre>{ totalPage: 20, index : 10}</pre>
-</div>
-<div class="elfPagination { totalPage: 20, index : 10}"></div>
+<!--<div class="opt">-->
+<!--<pre>{ totalPage: 20, index : 10}</pre>-->
+<!--</div>-->
+<!--<div class="elfPagination { totalPage: 20, index : 10}"></div>-->
 
-<div class="opt">
-    <pre>{ totalPage: 20, index : 10, numEdge: 3, numSiblings: 3}</pre>
-</div>
-<div class="elfPagination { totalPage: 20, index : 10, numEdge: 3, numSiblings: 3}"></div>
+<!--<div class="opt">-->
+<!--<pre>{ totalPage: 20, index : 10, numEdge: 3, numSiblings: 3}</pre>-->
+<!--</div>-->
+<!--<div class="elfPagination { totalPage: 20, index : 10, numEdge: 3, numSiblings: 3}"></div>-->
 
-<div class="opt">
-    <pre>{ totalPage: 20, functions: { prevAndNext: true, goTo : false, totalPage : true } }</pre>
-</div>
-<div class="elfPagination { totalPage: 20, functions: { prevAndNext: true, goTo : false, totalPage : true } }"></div>
+<!--<div class="opt">-->
+<!--<pre>{ totalPage: 20, functions: { prevAndNext: true, goTo : false, totalPage : true } }</pre>-->
+<!--</div>-->
+<!--<div class="elfPagination { totalPage: 20, functions: { prevAndNext: true, goTo : false, totalPage : true } }"></div>-->
 
-<div class="opt">
-    <pre>{ totalPage: 5, functions: { prevAndNext: true, goTo : false, totalPage : false} }</pre>
-</div>
-<div class="elfPagination { totalPage: 5, functions: { prevAndNext: true, goTo : false, totalPage : false} }"></div>
-
+<!--<div class="opt">-->
+<!--<pre>{ totalPage: 5, functions: { prevAndNext: true, goTo : false, totalPage : false} }</pre>-->
+<!--</div>-->
+<!--<div class="elfPagination { totalPage: 5, functions: { prevAndNext: true, goTo : false, totalPage : false} }"></div>-->
 
 <script type="text/javascript">
     $(".elfPagination").elfPagination();
+    $("#aa").elfPagination("goToPage", 8).elfPagination({index:2});
 </script>
 
 </body>
