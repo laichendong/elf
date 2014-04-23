@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>elf color picker</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+        }
+    </style>
+    <link href="jquery.elfColorPicker.css" rel="stylesheet"/>
+    <link href="jquery.elfTips.css" rel="stylesheet"/>
+
+
+</head>
+<body>
+<div style="width: 400px; margin: 100px auto;">
+    <s id="sdf" class="elfColorPicker elfColorPickerTrigger f_l" value-for="" visaul-for=""></s>
+
+</div>
+<div style="clear: both;">
+    <a tip="撒旦法" class="tipTrigger">adfadsf
+    </a>
+
+    <div class="elfTip">
+        <div class="elfTipContent">撒旦法撒旦法撒旦法撒旦法</div>
+        <div class="elfTipArrow"></div>
+    </div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="jquery.elfColorPicker.js" language="JavaScript"></script>
+<script src="jquery.elfTips.js" language="JavaScript"></script>
+<script type="text/javascript">
+    $(function () {
+        $(".elfColorPicker").elfColorPicker({})
+    });
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+.tipTrigger {
+    position: relative;
+    cursor: pointer;
+}
+.elfTip {
+    display: block;
+    position: relative;
+    width: 276px;
+    max-width: 276px;
+    font:12px;
+    text-align: left;
+    line-height: 16px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    padding: 8px;
+    color: #333;
+}
+.elfTipArrow{
+    width:0px;
+    height:0px;
+    border:10px solid transparent;
+    border-top-color: #aaa;
+    position:absolute;
+    bottom:-20px;
+    left:10%;
+}
+.elfTipArrow:after {
+    content:"";
+    display: block;
+    width:0px;
+    height:0px;
+    border:10px solid transparent;
+    border-top-color: #fff;
+    position:absolute;
+    bottom:-9px;
+    left:-10px;
+}
