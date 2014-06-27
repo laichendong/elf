@@ -10,7 +10,7 @@ public class TagetServiceImpl implements TagetService {
     /**
      * 需要被拦截的方法
      */
-    @java.lang.Override
+    @Override
     public void doSomething() {
         System.out.println("doing something.");
     }

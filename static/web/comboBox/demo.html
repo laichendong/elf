@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>elf combo box demo</title>
+    <script src="../lib/jquery.min.js"></script>
+    <script src="../lib/jquery.metadata.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+            color: rgb(85, 85, 85);
+        }
+        .clear-fix:after {
+            content: " ";
+            display: table;
+            clear: both;
+        }
+        .comboBox .input, .comboBox .arrow {
+            border: 1px solid rgb(204, 204, 204);
+            border-radius: 4px;
+            box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset;
+            font-size: 14px;
+            height: 20px;
+            line-height: 20px;
+            padding: 3px 6px;
+            float: left;
+        }
+        .comboBox .input {
+            width: 200px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        .comboBox .arrow {
+            width: 20px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            border-left: none;
+            cursor: pointer;
+        }
+        .comboBox .arrow:hover {
+            background: rgb(230, 230, 235);
+        }
+        .comboBox .options {
+            list-style: none;
+            width: 231px;
+            height: 100px;
+            overflow-y: scroll;
+            border: 1px solid rgb(204, 204, 204);
+            border-radius: 4px;
+
+
+
+            line-height: 14px;
+            padding: 6px 12px;
+        }
+
+        .comboBox .options li {
+            height: 20px;
+            line-height: 20px;
+            font-size: 14px;
+            padding: ;
+        }
+    </style>
+</head>
+<body>
+<div class="comboBox">
+    <div class="clear-fix">
+        <input class="input" />
+        <span class="arrow">↓</span>
+    </div>
+
+
+
+</div>
+</body>
+</html>
