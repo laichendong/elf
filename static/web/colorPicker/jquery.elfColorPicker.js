@@ -36,7 +36,7 @@
     };
     //插件默认选项
     $.fn.elfColorPicker._options = {
-        picked: function () {
+        picked: function (c) {
         }, // 颜色选中后的回调函数
         beforeOpen: function () {
         }, // 打开前回调
@@ -95,7 +95,7 @@
                  */
                 setData($(this).attr("c"), trigger, valueFor, extraColorLump);
                 hide(trigger, elfColorPickerObj, valueFor, extraColorLump, false);
-                _options.picked();
+                _options.picked($(this).attr("c"));
             }).delegate("ul.clr_body", "mouseleave",function () {
                 /*
                  * 鼠标移出颜色选择区  恢复之前的选中状态
