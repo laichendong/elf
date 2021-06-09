@@ -4,6 +4,9 @@
 int getline_(char line[], int maxline);
 void copy(char to[], char from[]);
 
+/**
+ * 修改打印最长文本行的程序的主程序Main， 使之可打印任意长度的输入的长度， 并尽可能多地打印文本
+ */
 int main(){
     int len;
     int max;
