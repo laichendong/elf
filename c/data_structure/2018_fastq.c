@@ -22,7 +22,7 @@ void validate(char *file_name){
 }
 
 int validate_line_1(char *line1, char *error_msg){
-    if("@" != line1[0]){
+    if('@' != line1[0]){
         error_msg = "非法文件：第一行不是以@开头";
         return -1;
     }
